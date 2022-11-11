@@ -10,4 +10,9 @@ async function createMessage({ userID, title, text }) {
 	return createdMessage;
 }
 
-module.exports = { createMessage };
+async function getAllMessages() {
+	const allMessages = await Message.find();
+	return allMessages;
+}
+
+module.exports = { createMessage, getAllMessages };
