@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-	res.json({ msg: 'all users' });
+const userDBFunctions = require('../db/controllers/userController');
+
+router.post('/', async (req, res) => {
+	const createdUser = await userDBFunctions.createUser(req.body);
+	res.json(createdUser);
 });
 
 module.exports = router;
