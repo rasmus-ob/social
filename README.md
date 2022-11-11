@@ -9,8 +9,8 @@ _Social media for the **user** <u>not</u> the company_
 ### For server
 
 ```
-`cd server`
-`npm i`
+cd server
+npm i
 ```
 
 ### For client
