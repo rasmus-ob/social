@@ -10,4 +10,10 @@ async function createUser({ name, age, email }) {
 	return createdUser;
 }
 
-module.exports = { createUser };
+async function getAllUsers() {
+	const allUsers = await User.find();
+
+	return allUsers;
+}
+
+module.exports = { createUser, getAllUsers };
