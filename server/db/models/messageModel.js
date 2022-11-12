@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Creates the messageSchema
 const messageSchema = new mongoose.Schema({
 	userID: {
 		type: mongoose.Schema.Types.ObjectId,
@@ -16,4 +17,5 @@ const messageSchema = new mongoose.Schema({
 	},
 });
 
+// Exports a model that is made with the messageSchema
 module.exports = mongoose.model('Message', messageSchema);
