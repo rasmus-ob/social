@@ -36,3 +36,10 @@ Configure it to fit your setup
 cd server
 npm run dev
 ```
+
+## How to run the client
+
+```
+cd client
+npm run dev
+```
