@@ -1,6 +1,7 @@
 # social
 
-_Social media for the **user** <u>not</u> the company_
+## Philosophy
+_Social media is for the **user** <u>not</u> the company_
 
 # How to use:
 
